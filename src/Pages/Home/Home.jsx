@@ -11,20 +11,20 @@ const Home = () => {
         <Caro/>
 
 
-            <div className="bg-emerald-200 p-6 mt-10">
-                <h1 className="text-center bg-red-500 text-white text-4xl font-bold">Latest Three Laptops Here</h1>
-                <div className="flex justify-evenly">
+            <div className=" p-6 mt-10 bg-indigo-100">
+                <h1 className="text-center  text-black text-4xl font-bold">Latest Three Laptops Here</h1>
+                <div className="flex justify-evenly g-slate-100 mt-12">
                     {a.map(b => <div
                         key={b._id}
                     >
-                        <div className="laptops-card">
+                        <div className="laptops-card p-4">
                             <img src={b.image} alt="" />
                             <p className='text-red-600 font-bold'>Price: {b.price}$</p>
                             <p>Color: {b.color}</p>
                             <p>Company: {b.make}</p>
                             <p>Model: {b.model}</p>
-                            <p>Year: {b.year}</p>
-                            <p>Mileage: {b.mileage}</p>
+                            <p>Memory(RAM): {b.memory}</p>
+                            <p>Storage: {b.storage}</p>
                             <Link to={`/singleLaptops/${b._id}`}><button className='btn btn-outline mt-5'>Buy {b.model}</button></Link>
                         </div>
                     </div>)}

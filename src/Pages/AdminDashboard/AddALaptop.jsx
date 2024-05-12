@@ -26,9 +26,9 @@ const AddALaptop = () => {
                     const intern = {
                         make: data.make,
                         model: data.model,
-                        year: data.year,
+                        memory: data.memory,
                         color: data.color,
-                        mileage: data.mileage,
+                        storage: data.storage,
                         price: data.price,
                         image: imgData.data.url,
                     };
@@ -88,8 +88,8 @@ const AddALaptop = () => {
                             
                         </div>
                         <div className="form-control w-full max-w-xs">
-                            <label className="label"> <span className="label-text">Year</span></label>
-                            <input type="text" {...register("year", {
+                            <label className="label"> <span className="label-text">Memory(RAM)</span></label>
+                            <input type="text" {...register("memory", {
                                 required: true
                             })} className="input input-bordered w-full max-w-xs" />
                            
@@ -104,8 +104,8 @@ const AddALaptop = () => {
 
                     <section className="second-section">
                         <div className="form-control w-full max-w-xs">
-                            <label className="label"> <span className="label-text">Mileage</span></label>
-                            <input  type="text" {...register("mileage", {
+                            <label className="label"> <span className="label-text">Storage</span></label>
+                            <input  type="text" {...register("storage", {
                                 required: true
                             })} className="input input-bordered w-full max-w-xs" />
                         </div>
@@ -128,7 +128,7 @@ const AddALaptop = () => {
                     </section>
                 </section>
 
-                <input onClick={toast} className='btn btn-accent w-full mt-4' value="Add Laptop" type="submit" />
+                <input onClick={toast} className='btn bg-slate-500 w-[130px] mt-4 text-white font-medium' value="Add Laptop" type="submit" />
             </form>
 
         </div>

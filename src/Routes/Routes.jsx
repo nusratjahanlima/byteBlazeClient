@@ -5,7 +5,6 @@ import Register from "../Pages/SignUp/Register";
 import Login from "../Pages/SignUp/Login";
 import PrivateRoute from "./PrivateRoute";
 import PleaseLogin from "../Pages/SignUp/PleaseLogin";
-import Toyota from "../Pages/Toyota/Toyota";
 import Dashboard from "../Pages/Dashboard/Dashboard";
 import UserHome from "../Pages/UserDashboard/UserHome";
 import AddALaptop from "../Pages/AdminDashboard/AddALaptop";
@@ -13,6 +12,7 @@ import UpdateLaptop from "../Pages/AdminDashboard/UpdateLaptop";
 import Laptops from "../Pages/Laptops/Laptops";
 import SingleLaptop from "../Pages/Laptops/SingleLaptop";
 import OrderdLaptops from "../Pages/UserDashboard/OrderdLaptops";
+import AppleMacBook from "../Pages/AppleMacBook/AppleMacBook";
 
 
 export const router = createBrowserRouter([
@@ -49,8 +49,8 @@ export const router = createBrowserRouter([
                 element: <PleaseLogin />
             },
             {
-                path: '/toyota',
-                element: <Toyota />
+                path: '/appleMacBook',
+                element: <AppleMacBook/>
             },
             {
                 path: '*',

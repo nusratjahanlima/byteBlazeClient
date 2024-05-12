@@ -3,7 +3,7 @@ import { useLoaderData } from "react-router-dom";
 
 const SingleLaptop = () => {
     const a = useLoaderData();
-    const { make, model, year, color, mileage, price, image } = a;
+    const { make, model, memory, color, storage, price, image } = a;
     return (
         <div>
             <div className="laptops-card">
@@ -12,8 +12,8 @@ const SingleLaptop = () => {
                 <p>Color: {color}</p>
                 <p>Company: {make}</p>
                 <p>Model: {model}</p>
-                <p>Year: {year}</p>
-                <p>Mileage: {mileage}</p>
+                <p>Memory(RAM): {memory}</p>
+                <p>Storage: {storage}</p>
             </div>
         </div>
     );

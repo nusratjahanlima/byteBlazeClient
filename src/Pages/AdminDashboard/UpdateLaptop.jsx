@@ -22,7 +22,7 @@ const UpdateLaptop = () => {
             });
             if (response.ok) {
                 // If deletion successful, update the car list
-                setLaptops(prevCars => prevCars.filter(car => car._id !== id));
+                setLaptops(prevLaptops => prevLaptops.filter(laptop => laptop._id !== id));
             } else {
                 console.error('Failed to delete car:', response.statusText);
             }
@@ -38,12 +38,11 @@ const UpdateLaptop = () => {
                     <tr>
                         <th>Make</th>
                         <th>Model</th>
-                        <th>Year</th>
+                        <th>Memory(RAM)</th>
                         <th>Color</th>
-                        <th>Mileage</th>
+                        <th>Storage</th>
                         <th>Price</th>
                         <th>Image</th>
-                        <th>Action</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -51,9 +50,9 @@ const UpdateLaptop = () => {
                         <tr key={laptop._id}>
                             <td>{laptop.make}</td>
                             <td>{laptop.model}</td>
-                            <td>{laptop.year}</td>
+                            <td>{laptop.memory}</td>
                             <td>{laptop.color}</td>
-                            <td>{laptop.mileage}</td>
+                            <td>{laptop.storage}</td>
                             <td>{laptop.price}</td>
                             <td>
                                 <img src={laptop.image} alt={`${laptop.make} ${laptop.model}`} className="w-12 h-12" />

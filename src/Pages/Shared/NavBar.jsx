@@ -24,7 +24,7 @@ const NavBar = () => {
                             <li><NavLink to='/'>Home</NavLink></li>
                             {/* <li><NavLink to='/cars'>Cars</NavLink></li> */}
                             <li><NavLink to='/laptops'>Laptops</NavLink></li>
-                            
+                            <li><NavLink to='/appleMacBook'>Apple MacBook</NavLink></li>
                             {
                                 user ? <>
                                     <button onClick={handleLogOut}>LogOut</button>
@@ -38,13 +38,14 @@ const NavBar = () => {
 
                         </ul>
                     </div>
-                    <a className="btn btn-ghost text-xl">daisyUI</a>
+                    <a className="text-4xl font-semibold">ByteBlaze</a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1 font-bold">
                         <li><NavLink to='/'>Home</NavLink></li>
                         {/* <li><NavLink to='/cars'>Cars</NavLink></li> */}
                         <li><NavLink to='/laptops'>Laptops</NavLink></li>
+                        <li><NavLink to='/appleMacBook'>Apple MacBook</NavLink></li>
                         {
                             user ? <>
                                 <button onClick={handleLogOut}>LogOut</button>
@@ -55,11 +56,13 @@ const NavBar = () => {
                                     <li><NavLink to='/login'>Login</NavLink></li>
                                 </>
                         }
-                        <li><NavLink to="/dashboard/UserHome">Dashboard</NavLink></li>
+                        
+                        {/* <li><NavLink to="/dashboard/UserHome">Dashboard</NavLink></li> */}
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <Link to='/toyota' className="btn">Toyota</Link>
+                <Link to="/dashboard/UserHome" className="btn bg-slate-400">Dashboard</Link>
+                    {/* <Link to='/appleMacBook' className="btn">Apple MacBook</Link> */}
                 </div>
             </div>
         </div>

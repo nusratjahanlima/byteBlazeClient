@@ -44,7 +44,7 @@ const PleaseLogin = () => {
 
     return (
        <div>
-            <h1 className="text-3xl text-center bg-red-500 p-2 text-white">PLease Login First</h1>
+            <h1 className="text-3xl text-center bg-red-500 p-2 text-white">Please Login First</h1>
 
             <div className="hero min-h-screen bg-base-200">
 

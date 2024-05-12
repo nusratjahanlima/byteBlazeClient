@@ -5,7 +5,7 @@ import { MdLibraryAdd } from "react-icons/md";
 import { HiOutlineHome } from "react-icons/hi";
 import { CgProfile } from "react-icons/cg";
 import { AuthContext } from "../../Provider/AuthProvider";
-import { FaCarRear } from "react-icons/fa6";
+import { FaLaptop  } from "react-icons/fa6";
 
 
 const Dashboard = () => {
@@ -48,17 +48,14 @@ const Dashboard = () => {
                             isAdmin ? (
                                 <>
                                     <li><NavLink to="/dashboard/UserHome"><CgProfile /> Admin Home</NavLink></li>
-                                    <li><NavLink to="/dashboard/AddACar"><MdLibraryAdd /> Add A Car</NavLink></li>
-                                    <li><NavLink to="/dashboard/UpdateCar"><FaCarRear /> Update Car</NavLink></li>
                                     <li><NavLink to="/dashboard/AddALaptop"><MdLibraryAdd /> Add A Laptop</NavLink></li>
-                                    <li><NavLink to="/dashboard/UpdateLaptop"><FaCarRear /> Update Laptop</NavLink></li>
+                                    <li><NavLink to="/dashboard/UpdateLaptop"><FaLaptop /> Update Laptop</NavLink></li>
                                     <li><NavLink to="/"><HiOutlineHome /> Back To Home</NavLink></li>
                                 </>
                             ) : (
                                 <>
                                     <li><NavLink to="/dashboard/UserHome"><CgProfile /> User Home</NavLink></li>
-                                    <li><NavLink to="/dashboard/OrderdCars"><FaCarRear /> Order Cars</NavLink></li>
-                                    <li><NavLink to="/dashboard/OrderdLaptops"><FaCarRear /> Order Laptops</NavLink></li>
+                                    <li><NavLink to="/dashboard/OrderdLaptops"><FaLaptop/> Order Laptops</NavLink></li>
                                     <li><NavLink to="/"><HiOutlineHome /> Back To Home</NavLink></li>
 
                                 </>
